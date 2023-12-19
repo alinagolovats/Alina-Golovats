@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c8e8d1fc-88c8-4643-aabe-6f33a4cd6d05</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>korduslaused.py</StartupFile>
+    <StartupFile>praktilinetöö.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,7 @@
   <ItemGroup>
     <Compile Include="Alina_Golovats.py" />
     <Compile Include="korduslaused.py" />
+    <Compile Include="praktilinetöö.py" />
     <Compile Include="vigadeotsing.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
