@@ -91,35 +91,35 @@
 #    print("Vale andmete formaat!")
 
 
-from datetime import *
-from random import *
-arve_nr=datetime.now() #date.today()
-print(arve_nr)
-tsekk="Arve: "+str(arve_nr)+"\nToode Hind Kogus Summa/n"
-summa=0
-toode1="piim"
-hind=randint(50,150)/100
-v=input("Toode:"+toode1+" Hind:"+str(hind)+"\nKas tahad osta?").lower()
-if v=="jah":
-    mitu=int(input("Mitu?"))
-    tsekk+=toode1+" "+str(hind)+" "+str(mitu)+" "+str(mitu*hind)+"/n"
-    summa+=mitu*hind
-print(tsekk)
-toode2="mahl"
-hind=randint(50,150)/100
-v=input("Toode:"+toode2+" Hind:"+str(hind)+"\nKas tahad osta?").lower
-if v=="jah":
-    mitu=int(input("Mitu?"))
-    tsekk+=toode1+" ",+str(hind)," ",+str(mitu)+" "+str(mitu*hind)+"\n"
-    summa+=mitu*hind
-print(tsekk)
-toode3="vesi"
-hind=randint(50,150)/100
-v=input("Toode:"+toode3+" Hind:"+str(hind)+"\nKas tahad osta?").lower
-if v=="jah":
-    mitu=int(input("Mitu?"))
-    tsekk+=toode3+" ",+str(hind)," ",+str(mitu)+" "+str(mitu*hind)+"\n"
-    summa+=mitu*hind
-tsekk+="Kokku maksta: "+str(summa)
-print(tsekk)
+#from datetime import *
+#from random import *
+#arve_nr=datetime.now() #date.today()
+#print(arve_nr)
+#tsekk="Arve: "+str(arve_nr)+"\nToode Hind Kogus Summa/n"
+#summa=0
+#toode1="piim"
+#hind=randint(50,150)/100
+#v=input("Toode:"+toode1+" Hind:"+str(hind)+"\nKas tahad osta?").lower()
+#if v=="jah":
+#    mitu=int(input("Mitu?"))
+#    tsekk+=toode1+" "+str(hind)+" "+str(mitu)+" "+str(mitu*hind)+"/n"
+#    summa+=mitu*hind
+#print(tsekk)
+#toode2="mahl"
+#hind=randint(50,150)/100
+#v=input("Toode:"+toode2+" Hind:"+str(hind)+"\nKas tahad osta?").lower
+#if v=="jah":
+#    mitu=int(input("Mitu?"))
+#    tsekk+=toode1+" ",+str(hind)," ",+str(mitu)+" "+str(mitu*hind)+"\n"
+#    summa+=mitu*hind
+#print(tsekk)
+#toode3="vesi"
+#hind=randint(50,150)/100
+#v=input("Toode:"+toode3+" Hind:"+str(hind)+"\nKas tahad osta?").lower
+#if v=="jah":
+#    mitu=int(input("Mitu?"))
+#    tsekk+=toode3+" ",+str(hind)," ",+str(mitu)+" "+str(mitu*hind)+"\n"
+#    summa+=mitu*hind
+#tsekk+="Kokku maksta: "+str(summa)
+#print(tsekk)
 
