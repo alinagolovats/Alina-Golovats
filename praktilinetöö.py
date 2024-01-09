@@ -219,3 +219,4 @@ try:
     print("\nKohtumiseni, " + nimi + "! Igavesti Sinu, Python!")
 except ValueError:
     print("Viga! Palun sisestage õige arvuline väärtus.")
+    k,m,
