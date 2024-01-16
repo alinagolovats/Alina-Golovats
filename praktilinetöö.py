@@ -196,9 +196,9 @@ try:
     print(nimi + ", oi kui ilus nimi!")
     vastus = int(input(nimi + "! Kas leian Sinu keha indeksi? 0-ei, 1-jah => "))
     if vastus == 1:
-        pikkus = int(input("Sisestage oma pikkus (cm): "))
-        mass = float(input("Sisestage oma mass (kg): "))
-        indeks = mass / ((0.01 * pikkus) ** 2)
+        pikkus = int(input("Sisestage oma pikkus: "))
+        mass = float(input("Sisestage oma mass: "))
+        indeks = mass/((0.01 * pikkus) ** 2)
         print(nimi + "! Sinu keha indeks on: {:.1f}".format(indeks))
         if indeks < 16:
             print("Tervisele ohtlik alakaal")
@@ -217,6 +217,87 @@ try:
     else:
         print("Kahju! See on väga kasulik info!")
     print("\nKohtumiseni, " + nimi + "! Igavesti Sinu, Python!")
-except ValueError:
-    print("Viga! Palun sisestage õige arvuline väärtus.")
+except:
+    print("Viga!")
+
+
+
+from math import*
+answer=input("Желаете решить квадратное уравнение?")
+if answer.lower()=="да":
+        try:
+            a=float(input("Введите значение а: "))
+            b=float(input("Введите значение b: "))
+            c=float(input("Введите значение c: "))
+            D=b**2-4*a*c
+            if D>0:
+                x1=(-b+sqrt(D))/(2*a)
+                x2=(-b-sqrt(D))/(2*a)
+                print("2 lahendust {x1:.2f}, 2:{1:.2f}".format(x1,x2))
+            elif D==0:
+                x1=-b/(2*a)
+                print("1 lahendus {0:.2f}".format(x1))
+            else:
+                print("Корни отсутствуют")
+        except:
+            print("До свидания")
+else:
+    print("Ошибка")
+
+
+число = float(input("Введите число: "))
+if число > 0:
+    print("Число положительное")
+    if число % 2 == 0:
+        print("Число четное")
+    else:
+        print("Число нечетное")
+elif число < 0:
+    print("Число отрицательное")
+else:
+    print("Число равно нулю")
+
+
+a= float(input("Введите первое число: "))
+b = float(input("Введите второе число: "))
+c = float(input("Введите третье число: "))
+if a > 0 and b > 0 and c > 0:
+    if a + b + c == 180:
+        if a == b == c:
+            print("Треугольник равносторонний")
+        elif a == b or a == c or b == c:
+            print("Треугольник равнобедренный")
+        else:
+            print("Треугольник разносторонний")
+    else:
+        print("Сумма углов треугольника должна быть равна 180 градусов")
+else:
+    print("Введите положительные числа")
+
+
+ответ = input("Желаете расшифровать порядковый номер дня недели?: ")
+if ответ.lower() == "да":
+    номер = int(input("Введите порядковый номер дня недели (от 1 до 7): "))
+    if 1 <= номер <= 7:
+        дни=["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"]
+        название = дни[номер - 1]
+        print(f"День недели с порядковым номером {номер} - это {название}.")
+    else:
+        print("Неверный порядковый номер. Введите число от 1 до 7")
+else:
+    print("Вы не хотите расшифровывать порядковый номер дня недели")
+
+
+значение = input("Введите число или текст: ")
+if значение.isdigit() or (значение[0] == '-' and значение[1:].isdigit()):
+    число = int(значение)
+    print("Тип: Целое число")
+    print(f"50% от числа: {число // 2}")
+elif значение.replace('.', '', 1).isdigit() or (значение[0] == '-' and значение[1:].replace('.', '', 1).isdigit()):
+    число = float(значение)
+    print("Тип: Дробное число")
+    print(f"70% от числа: {число * 0.7}")
+else:
+    print("Тип: Текст")
+    print("Введенный текст:", значение)
     
