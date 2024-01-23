@@ -325,24 +325,24 @@
 #        print("Vale vastus. Proovi uuesti")
 
 
-from random import *
-number=randint(1,100)
-katsed=3
-while katsed>0:
-    külaline = int(input("Угадайте число от 1 до 100: "))
-    if külaline == number:
-        print("Поздравляем, вы угадали число!")
-        break
-    else:
-        katsed -= 1
-        print(f"Неверно. У вас осталось {katsed} попыток.")
-        if katsed == 0:
-            print(f"Извините, вы использовали все попытки. Загаданное число было {number}.")
-            veelkord = input("Хотите ли угадать?: ").lower()
-            if veelkord.lower()=="нет":
-                break
-            else:
-                katsed=3
+#from random import *
+#number=randint(1,100)
+#katsed=3
+#while katsed>0:
+#    külaline = int(input("Угадайте число от 1 до 100: "))
+#    if külaline == number:
+#        print("Поздравляем, вы угадали число!")
+#        break
+#    else:
+#        katsed -= 1
+#        print(f"Неверно. У вас осталось {katsed} попыток.")
+#        if katsed == 0:
+#            print(f"Извините, вы использовали все попытки. Загаданное число было {number}.")
+#            veelkord = input("Хотите ли угадать?: ").lower()
+#            if veelkord.lower()=="нет":
+#                break
+#            else:
+#                katsed=3
 
 
 
@@ -353,9 +353,14 @@ while katsed>0:
 #print()
 
 
-#from random import*
-#madalam=1
-#ülemine=100
-#number=randint(madalam,ülemine)
-#while True:
-#    sisend
+#print("Arv ruut kuup")
+#print()
+#print("-------------")
+#print()
+
+#for i in range(1,11):
+#    ruut=i**2
+#    kuup=i**3
+#    print(f"{i:2} {ruut:2} {kuup:3}")
+
+
